@@ -1,0 +1,11 @@
+device,interface,ipv4_address,purpose
+HQ-EDGE-R1,G0/1,10.255.0.1/30,Primary branch WAN
+BRANCH-R1,G0/1,10.255.0.2/30,Primary headquarters WAN
+HQ-EDGE-R2,G0/1,10.255.0.5/30,Secondary branch WAN
+BRANCH-R1,G0/2,10.255.0.6/30,Secondary headquarters WAN
+HQ-EDGE-R1,G0/2,198.51.100.2/30,Primary ISP uplink
+ISP-R1,G0/0,198.51.100.1/30,Primary customer edge
+HQ-EDGE-R2,G0/2,198.51.100.6/30,Secondary ISP uplink
+ISP-R1,G0/1,198.51.100.5/30,Secondary customer edge
+InfrastructureServer,NIC,10.10.50.10/24,DHCP DNS NTP Syslog
+PublicServer,NIC,203.0.113.10/24,Internet test destination
